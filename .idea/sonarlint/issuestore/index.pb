@@ -5,8 +5,6 @@ P
  app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
 @
 app/build.gradle,f/4/f4a01d6a4fcb971362ec00a83903fd3902f52164
-o
-?app/src/main/java/com/example/qrcode/QRProvider/ScanDataInfo.kt,1/e/1e891a0fdae3498622a923ad4c8491b52e2334d8
 v
 Fapp/src/main/java/com/example/qrcode/RoomDataBase/TimeTypeConverter.kt,2/a/2a9cdc9e63f45cbc0f90be938c9f03c18ea2d95b
 p
@@ -21,13 +19,11 @@ g
 7app/src/main/java/com/example/qrcode/UI/MainActivity.kt,3/b/3b463f34cf010cd63bcfe019cce80a4a4666c06d
 o
 ?app/src/main/java/com/example/qrcode/RoomDataBase/DataEntity.kt,4/5/4548e70a4c680b9b91082fa67f55c8b8e40bc86a
-l
-<app/src/main/java/com/example/qrcode/RoomDataBase/TypeDAO.kt,5/5/55450338bd47461787fc4173a6d4eb37ae3b4990
 F
 app/proguard-rules.pro,9/e/9e08934d811afe28fbc77aaa3c0d747b94348db9
-o
-?app/src/main/java/com/example/qrcode/RoomDataBase/TypeEntity.kt,8/f/8f7a107fe112fbc26c8ed8ec1b8bad98388ce3b8
 b
 2app/src/main/java/com/example/qrcode/DI/modules.kt,8/c/8c74bebdf018d181d6bad7df868e8ba58d8d02dc
-n
->app/src/main/java/com/example/qrcode/RoomDataBase/ProvideDB.kt,c/9/c9b6d25882cd89fefa49ca990ac9851f568149a0
+s
+Capp/src/main/java/com/example/qrcode/RoomDataBase/DataRepository.kt,e/6/e6672589f4ac24187e34eb854beedd45fbe90aa7
+r
+Bapp/src/main/java/com/example/qrcode/RoomDataBase/DataViewModel.kt,c/9/c9929b2272c151003cbd89a07e78f3a210f49ecc

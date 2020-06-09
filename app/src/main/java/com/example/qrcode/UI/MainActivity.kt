@@ -11,10 +11,15 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.qrcode.DI.mainActivityDI
+import com.example.qrcode.DI.myModules
 import com.example.qrcode.QRProvider.ScanCode
 import com.example.qrcode.R
 import com.example.qrcode.RoomDataBase.*
 import org.koin.android.ext.koin.androidContext
+import org.koin.android.ext.koin.androidFileProperties
+import org.koin.android.ext.koin.androidLogger
+import org.koin.android.viewmodel.compat.ScopeCompat.viewModel
+import org.koin.android.viewmodel.ext.android.viewModel
 import org.koin.core.context.loadKoinModules
 import org.koin.core.context.startKoin
 import org.koin.dsl.module
@@ -26,6 +31,7 @@ class MainActivity : AppCompatActivity() {
     private var db: AppDataBase? = null
     private var dataDao: DataDAO? = null
 
+    val dataViewModel: DataViewModel by viewModel()
 
 
     @RequiresApi(Build.VERSION_CODES.O)
@@ -42,8 +48,10 @@ class MainActivity : AppCompatActivity() {
         db = AppDataBase.getAppDataBase(context = this)
 
         startKoin {
+            androidLogger()
             androidContext(this@MainActivity)
-            modules( listOf( mainActivityDI))
+
+            modules( listOf( mainActivityDI, myModules))
 
         }
 

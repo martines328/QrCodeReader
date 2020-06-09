@@ -38,7 +38,6 @@ class ScanCode : AppCompatActivity() {
     val mainActivity: MainActivity by inject()
 
 
-
     init {
 
     }
@@ -126,10 +125,9 @@ class ScanCode : AppCompatActivity() {
         Log.d("mylog", codeResult?.rawValue)
         Log.d("mylog", codeResult.toString())
 
-        if (codeResult!= null){
-            provideDecodeDataToDB(codeResult?.rawValue, LocalDateTime.now().toString(),"texttype")
+        if (codeResult != null) {
+           // provideDecodeDataToDB(codeResult?.rawValue, LocalDateTime.now().toString(), "texttype")
         }
-
 
 
     }
@@ -148,7 +146,7 @@ class ScanCode : AppCompatActivity() {
     }
 
 
-    fun provideDecodeDataToDB(data: String, time: String, typeData: String){
+    /* fun provideDecodeDataToDB(data: String, time: String, typeData: String){
 
         doAsync {
             val db: AppDataBase? = AppDataBase.getAppDataBase(this@ScanCode)
@@ -159,7 +157,7 @@ class ScanCode : AppCompatActivity() {
         }
 
 
-    }
+    }*/
 
 
 

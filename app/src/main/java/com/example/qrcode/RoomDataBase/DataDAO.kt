@@ -13,6 +13,6 @@ interface DataDAO {
     fun insertData(data: DataEntity)
 
     @Query("select * from data")
-    fun getAllData(): List<DataEntity>
+    fun getAllData(): LiveData<List<DataEntity>>
 
 }

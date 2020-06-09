@@ -67,8 +67,8 @@ dependencies {
     implementation("io.reactivex.rxjava3:rxkotlin:3.0.0")
 
 
-    implementation "org.koin:koin-core:$koin_version"
     implementation "org.koin:koin-android:$koin_version"
+    implementation "org.koin:koin-android-viewmodel:$koin_version"
 
     implementation 'org.jetbrains.anko:anko-common:0.9'
 
