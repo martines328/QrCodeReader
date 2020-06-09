@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dataText"
+        android:textSize="15dp"
+        android:singleLine="false"
+        android:text="test text 12345"
+        android:textColor="@color/dataColorRecyclerItem"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeText"
+        android:textSize="15dp"
+        android:gravity="right"
+        android:text="monday 7 November 2020"
+        android:textColor="@color/timeColorRecyclerItem"/>
+
+
+
+</LinearLayout>
