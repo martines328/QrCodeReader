@@ -10,9 +10,9 @@ import androidx.room.Query
 interface DataDAO {
 
     @Insert
-    fun insertData(data: DataEntity)
+    suspend fun insertData(data: DataEntity)
 
     @Query("select * from data")
-    fun getAllData(): LiveData<List<DataEntity>>
+     fun getAllData(): LiveData<List<DataEntity>>
 
 }

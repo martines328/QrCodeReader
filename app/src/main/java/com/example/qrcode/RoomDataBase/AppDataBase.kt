@@ -8,14 +8,13 @@ import androidx.room.TypeConverters
 
 
 @Database(entities = arrayOf(DataEntity::class), version = 1, exportSchema = false)
-@TypeConverters(TimeTypeConverter::class)
 abstract class AppDataBase(): RoomDatabase() {
 
     abstract fun dataDao(): DataDAO
 
-
     companion object {
 
+        @Volatile
         var INSTANCE: AppDataBase? = null
 
         fun getAppDataBase(context: Context): AppDataBase? {

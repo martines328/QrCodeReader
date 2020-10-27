@@ -7,7 +7,8 @@
     android:layout_height="match_parent"
     tools:context=".QRProvider.ScanCode">
 
-    <TextView android:text=""
+    <TextView
+        android:text=""
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txtContent"/>

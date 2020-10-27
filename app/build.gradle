@@ -64,6 +64,7 @@ dependencies {
     implementation "androidx.room:room-ktx:$room_version"
     androidTestImplementation "androidx.room:room-testing:$room_version"
 
+
     implementation("io.reactivex.rxjava3:rxkotlin:3.0.0")
 
 
@@ -71,6 +72,11 @@ dependencies {
     implementation "org.koin:koin-android-viewmodel:$koin_version"
 
     implementation 'org.jetbrains.anko:anko-common:0.9'
+
+
+
+    //zxing
+    implementation 'com.google.zxing:core:3.4.0'
 
 
 
